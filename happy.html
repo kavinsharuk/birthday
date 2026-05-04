@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Love ❤️</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at top, #3b0a17, #120106);
+  color: white;
+}
+
+.container {
+  text-align: center;
+  padding: 20px 15px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #ff4b6e;
+}
+
+.subtitle {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.heart {
+  font-size: 40px;
+  animation: beat 1s infinite;
+}
+
+@keyframes beat {
+  0%,100%{transform:scale(1);} 
+  50%{transform:scale(1.2);} 
+}
+
+.glow-box {
+  background: rgba(255,255,255,0.08);
+  border-radius: 15px;
+  padding: 15px;
+  margin: 15px auto;
+  max-width: 100%;
+  box-shadow: 0 0 20px rgba(255,75,110,0.4);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+}
+
+.card {
+  background: rgba(255,255,255,0.1);
+  padding: 12px;
+  border-radius: 12px;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background: rgba(255,75,110,0.3);
+}
+
+.gallery {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.gallery img {
+  height: 120px;
+  border-radius: 12px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(45deg,#ff4b6e,#ff758c);
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+footer {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #ff758c;
+}
+
+img.main-img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(255,75,110,0.6);
+}
+
+/* Mobile tweaks */
+@media (max-width: 480px) {
+  h1 { font-size: 1.6rem; }
+  .heart { font-size: 30px; }
+  .gallery img { height: 100px; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <!-- IMPORTANT: Replace with your image file name in same folder -->
+  <img src="D:\DSA for placement\ChatGPT Image May 5, 2026, 01_38_00 AM.png" class="main-img" alt="love">
+
+  <div class="heart">❤️</div>
+  <h1>Happy Birthday 💖</h1>
+  <p class="subtitle">To the most special person in my life</p>
+
+  <div class="glow-box">
+    <p>
+      Hey love...<br><br>
+      I don’t know if today is your birthday,
+      but I just want to say — I love you deeply.<br><br>
+      No matter how many fights,
+      you still mean everything to me ❤️
+    </p>
+  </div>
+
+  <div class="cards">
+    <div class="card">You make me happy 😊</div>
+    <div class="card">You understand me 🤍</div>
+    <div class="card">You stay with me 💞</div>
+    <div class="card">You are my peace 🕊️</div>
+  </div>
+
+  <button onclick="loveMsg()">Click me ❤️</button>
+
+  <footer>
+    I will always choose you 💖
+  </footer>
+</div>
+
+<script>
+function loveMsg(){
+  alert("I love you more than anything ❤️");
+}
+</script>
+
+</body>
+</html>
